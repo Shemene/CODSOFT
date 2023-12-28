@@ -16,3 +16,18 @@
     display: none;
   }
 }
+.paragraph-hide {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-style: oblique;
+  font-size: 15px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.title {
+  padding: 150px 0 0;
+}
