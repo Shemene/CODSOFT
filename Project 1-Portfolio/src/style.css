@@ -66,8 +66,25 @@ body {
 
 #menu {
   color: var(--main-color);
+  font-size: 28px;
+  margin-left: 10px;
+  z-index: 6;
+}
+
+.menu-btn span {
+  padding: 6px;
 }
 
 .menu-btn {
   display: flex;
+  font-family: var(--font-med);
+  background: linear-gradient(100.08deg, #f5ebbb 0%, #ffffff 100%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.navbar a.active {
+  color: var(--main-color);
 }
