@@ -1,10 +1,18 @@
-
-
-#navlinks{
-    color: rgb(0, 0, 0);
+#navlinks {
+  color: rgb(0, 0, 0);
 }
 
-#logo{
+#logo {
+  color: black;
+}
 
-    color: black;
+#centertext {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .paragraph-hide {
+    display: none;
+  }
 }
