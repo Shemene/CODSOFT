@@ -12,6 +12,8 @@
   --main-color: #ffae00;
   --large-font: 7rem;
   --p-font: 1.1rem;
+  --font-large: "Encode Sans", sans-serif;
+  --font-med: "Encode Sans", sans-serif;
 }
 
 body {
@@ -38,7 +40,34 @@ body {
   color: var(--text-color);
   font-size: 41px;
   font-weight: 600;
+  font-family: var(--font-large);
 }
-span {
+.logo span {
   color: var(--main-color);
+  font-family: "Encode Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: var(--p-font);
+  font-family: var(--font-med);
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0 25px;
+  transition: all ease 0.5s;
+}
+
+.navbar:hover {
+  color: var(--main-color);
+}
+
+#menu {
+  color: var(--main-color);
+}
+
+.menu-btn {
+  display: flex;
 }
