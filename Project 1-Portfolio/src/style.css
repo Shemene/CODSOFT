@@ -142,7 +142,7 @@ section {
   border: 2px solid var(--main-color);
   font-size: 16px;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: al 200ms rase-in-out;
 }
 
@@ -150,4 +150,17 @@ section {
   transform: translateY(-5px);
   color: var(--main-color);
   background: transparent;
+}
+
+.btn2 {
+  background-color: #141414;
+  border: 2px solid #141414;
+  color: var(--main-color);
+  margin-left: 25px;
+}
+
+.btn2:hover {
+  color: black;
+  background: white;
+  border: 2px solid var(--main-color);
 }
