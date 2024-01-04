@@ -34,3 +34,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   revealMenuBtn();
 });
+
+//reveal name text rom the left on page load
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heading = document.querySelector(".heading");
+
+  function revealHeading() {
+    heading.classList.add("reveal-left");
+  }
+
+  revealHeading();
+});
+
+//reveal the buttons pop up when page is loaded
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".btn");
+
+  function revealButtons() {
+    buttons.forEach(function (button) {
+      button.classList.add("reveal-pop");
+    });
+  }
+
+  revealButtons();
+});
