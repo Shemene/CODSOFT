@@ -315,7 +315,7 @@ section {
 
 .home-img img {
   animation: imgg 2s ease-in-out infinate;
-  animation-delay:2s;
+  animation-delay: 2s;
 }
 
 @keyframes imgg {
@@ -327,5 +327,44 @@ section {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar.active {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 50px;
+    top: 0;
+    right: 0;
+    left: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background: #2d2d2d;
+    transition: all 1.4s ease-in-out;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  .navbar a {
+    display: block;
+    color: #c3c3c3;
+    padding: 0px;
+    margin: 0 0 40px 0;
+    font-size: 2rem;
+    font-weight: 400;
   }
 }
