@@ -14,3 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const logo = document.querySelector(".logo");
+
+  function revealLogo() {
+    logo.classList.add("reveal");
+  }
+
+  // Call the reveal function once the DOM content is loaded
+  revealLogo();
+});

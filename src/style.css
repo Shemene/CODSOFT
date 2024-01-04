@@ -302,42 +302,6 @@ section {
   }
 }
 
-@media (max-width: 500px) {
-  :root {
-    --big-font: 4rem;
-    --p-font: 15px;
-    transition: 0.2s;
-  }
-  .btn {
-    padding: 9px 28px;
-  }
-}
-
-.home-img img {
-  animation: imgg 2s ease-in-out infinate;
-  animation-delay: 2s;
-}
-
-@keyframes imgg {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-22px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.navbar {
-  display: none;
-}
-
-.navbar.active {
-  display: flex;
-}
-
 @media (max-width: 767px) {
   .navbar {
     display: none;
@@ -366,5 +330,61 @@ section {
     margin: 0 0 40px 0;
     font-size: 2rem;
     font-weight: 400;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --big-font: 4rem;
+    --p-font: 15px;
+    transition: 0.2s;
+  }
+  .btn {
+    padding: 9px 28px;
+  }
+}
+
+.home-img img {
+  animation: imgg 2s ease-in-out infinate;
+  animation-delay: 2s;
+}
+
+@keyframes imgg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* Define initial styles for the hidden logo */
+.logo {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Define styles to reveal the logo from the left when the reveal class is added */
+.logo.reveal {
+  opacity: 1;
+  transform: translateX(0);
+  /* Add animation for smoother reveal effect */
+  animation: slideFromLeft 0.5s ease forwards;
+}
+
+/* Define animation for sliding in from the left */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
