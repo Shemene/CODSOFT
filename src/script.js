@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     navbar.classList.toggle("active");
   });
 
-  // Close the menu when a link is clicked
   const navLinks = document.querySelectorAll(".navbar a");
   navLinks.forEach(function (link) {
     link.addEventListener("click", function () {
@@ -16,12 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const logo = document.querySelector(".logo");
+  const navbar = document.querySelector(".navbar");
 
-  function revealLogo() {
-    logo.classList.add("reveal");
+  function revealNavbar() {
+    navbar.classList.add("reveal");
   }
 
-  // Call the reveal function once the DOM content is loaded
-  revealLogo();
+  revealNavbar();
+});
+
+//menu slide from right
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".menu-btn");
+
+  function revealMenuBtn() {
+    menuBtn.classList.add("reveal");
+  }
+
+  revealMenuBtn();
 });
