@@ -331,7 +331,9 @@ section {
     font-size: 2rem;
     font-weight: 400;
   }
-}
+    
+  }
+
 
 @media (max-width: 500px) {
   :root {
@@ -483,4 +485,28 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+   color: #c3c3c3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-item a {
+  font-size: 12px;
+  opacity: 60%;
+}
+
+
+.navbar li:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
 }
